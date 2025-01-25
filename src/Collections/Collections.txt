@@ -1,0 +1,24 @@
+java.util.Collection
+├── List
+│   ├── ArrayList
+│   ├── LinkedList
+│   ├── Vector
+│       └── Stack
+├── Set
+│   ├── HashSet
+│   ├── LinkedHashSet
+│   └── SortedSet
+│       └── TreeSet
+└── Queue
+    ├── PriorityQueue
+    └── Deque
+        ├── ArrayDeque
+        └── LinkedList
+
+java.util.Map
+├── HashMap
+├── LinkedHashMap
+├── TreeMap
+├── Hashtable
+└── ConcurrentMap
+    └── ConcurrentHashMap
