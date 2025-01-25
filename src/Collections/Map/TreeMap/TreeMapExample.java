@@ -33,6 +33,44 @@ package Collections.Map.TreeMap;
 //values()	Returns a Collection view of the values in the map.
 //entrySet()	Returns a Set view of the mappings in the map.
 
+//Advantages of TreeMap
+//Sorted Keys:
+//
+//Keys are always maintained in sorted order.
+//Custom Comparators:
+//
+//A custom comparator can be used to define the sorting order.
+//Efficient Navigation:
+//
+//Methods like headMap, tailMap, and subMap allow easy navigation within a range of keys.
+//Thread-Safe Variants:
+//
+//Can be made thread-safe by wrapping with Collections.synchronizedMap().
+//Disadvantages of TreeMap
+//No Null Keys:
+//
+//Does not allow null keys (unlike HashMap which allows one null key).
+//Slower than HashMap:
+//
+//Operations are O(log n) due to the Red-Black Tree, while HashMap has O(1) for most operations.
+
+//Use Cases for TreeMap
+//Sorted Data:
+//
+//Maintaining data in a sorted order (e.g., phonebook, leaderboard).
+//Range Queries:
+//
+//Efficiently fetching subsets of data using methods like headMap and tailMap.
+//Custom Sorting:
+//
+//Using a custom comparator for specialized sorting requirements.
+//Navigation:
+//
+//Use cases requiring navigation to find keys close to a given key (e.g., floorKey, ceilingKey).
+//TreeMap is an excellent choice when you need a Map implementation that maintains its keys in a sorted order and supports efficient navigation for range-based operations.
+
+//TreeMap is an excellent choice when you need a Map implementation that maintains its keys in a sorted order and supports efficient navigation for range-based operations.
+
 
 import java.util.TreeMap;
 
