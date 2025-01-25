@@ -1,4 +1,4 @@
-package Collections.Set.HashTable;
+package Collections.Map.HashTable;
 
 //A Hashtable is a legacy collection class in Java that implements the Map interface and stores data in key-value pairs. It is part of the java.util package and was one of the original collection classes introduced in Java.
 //Key Features of Hashtable
@@ -45,6 +45,21 @@ import java.util.Hashtable;
 //values()	Returns a collection of all the values in the Hashtable.
 //clone()	Creates a shallow copy of the Hashtable.
 //Example Code
+
+
+// Advantages
+//Thread-safe and synchronized.
+//Simple implementation for storing and retrieving data using keys.
+//
+//Disadvantages
+//Slower than HashMap because of synchronization.
+//Does not allow null keys or values.
+//Legacy class; alternatives like HashMap and ConcurrentHashMap are preferred in modern development.
+
+//Use Cases
+//Useful in multi-threaded applications where thread-safety is required.
+//When null keys or values are not expected or allowed.
+
 public class HashtableExample {
     public static void main(String[] args) {
 
