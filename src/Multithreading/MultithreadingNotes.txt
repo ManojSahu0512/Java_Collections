@@ -1,0 +1,3 @@
+1.
+2.
+3.Daemon Thread-->JVM will not wait for to end Daemon thread because it is a kind of garbage collector in java
