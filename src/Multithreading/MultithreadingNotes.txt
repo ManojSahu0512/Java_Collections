@@ -1,3 +1,6 @@
 1.
 2.
 3.Daemon Thread-->JVM will not wait for to end Daemon thread because it is a kind of garbage collector in java
+
+//synchronized is used to execute one thread at a time
+//
