@@ -20,6 +20,7 @@ public class BankAccount {
                         System.out.println("Completed withdrawal Remaining balance" + balance);
 
                     } catch (Exception e) {
+                        Thread.currentThread().interrupt();
 
                     } finally {
                         lock.unlock();
@@ -36,7 +37,7 @@ public class BankAccount {
             }
 
         } catch (Exception e) {
-            System.out.println(e);
+            Thread.currentThread().interrupt();
         }
     }
 }
