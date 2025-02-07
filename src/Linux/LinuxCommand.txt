@@ -1,0 +1,151 @@
+
+🖥️ System Monitoring Commands
+Check CPU, memory, and system status:
+
+top       # Live process monitoring
+htop      # Interactive process monitoring (install using `sudo apt install htop`)
+vmstat    # Reports memory, CPU, and disk usage
+iostat    # Check disk I/O performance
+free -h   # Show memory usage in human-readable format
+df -h     # Check disk space usage
+du -sh *  # Check size of directories/files in current path
+uptime    # System uptime and load average
+======================================================================================================
+📄 Log Analysis Commands
+Logs are critical in debugging server & application issues.
+
+tail -f /var/log/syslog      # Continuously monitor syslog
+tail -f /var/log/messages    # Check system logs
+tail -f /var/log/dmesg       # Kernel logs
+journalctl -xe               # Systemd logs
+grep "ERROR" /var/log/syslog  # Filter logs for errors
+awk '{print $1, $2, $5}' /var/log/syslog  # Extract specific columns
+less /var/log/nginx/access.log  # View logs page by page
+
+=========================================================================================================
+
+⚙️ Process Management
+Handle running processes efficiently.
+
+ps aux                    # List all running processes
+ps aux | grep java        # Find a specific process
+pgrep -l chrome          # Find process by name
+kill -9 <PID>            # Kill a process by ID
+pkill -9 java            # Kill a process by name
+nohup ./script.sh &      # Run process in background and keep it running
+jobs                    # List background jobs
+bg %1                   # Resume a job in the background
+fg %1                   # Resume a job in the foreground
+=======================================================================================================
+
+🕵️ File Handling & Searching
+Find, copy, move, delete files efficiently.
+
+find /var/log -type f -name "*.log"    # Find all log files
+find . -type f -mtime -1               # Find files modified in the last 1 day
+locate error.log                        # Locate a file
+grep -r "ERROR" /var/log               # Search for "ERROR" in logs
+grep -i "timeout" access.log           # Case-insensitive search
+sort file.txt | uniq                   # Remove duplicate lines in a file
+wc -l file.txt                         # Count number of lines in a file
+head -n 20 file.txt                    # Display first 20 lines
+tail -n 20 file.txt                    # Display last 20 lines
+====================================================================================================
+
+🛜 Network & Server Management
+Useful for debugging network issues.
+
+ifconfig                 # Show network interfaces (deprecated, use `ip a`)
+ip a                     # Show network interfaces and IP addresses
+ip route show            # Show routing table
+ping google.com          # Check network connectivity
+traceroute google.com    # Trace route to a server (install using `sudo apt install traceroute`)
+netstat -tulnp           # Show open ports
+ss -tulnp                # Show open ports (alternative to `netstat`)
+nslookup google.com      # Get DNS details of a domain
+dig google.com           # Get DNS records (install using `sudo apt install dnsutils`)
+curl -I https://example.com  # Get HTTP headers of a website
+wget https://example.com/file.zip  # Download a file from a URL
+scp file.txt user@server:/home/user/  # Secure copy file to remote server
+rsync -avz file.txt user@server:/backup/  # Sync files efficiently
+
+===================================================================================================
+
+🔐 User & Permissions Management
+Control access and permissions.
+
+whoami                   # Show current user
+id                       # Show user ID and group ID
+who                      # Show logged-in users
+groups                   # Show groups of the current user
+sudo useradd testuser    # Add a new user
+sudo passwd testuser     # Set password for user
+sudo userdel testuser    # Delete a user
+chmod 755 script.sh      # Change file permissions
+chown user:group file    # Change file owner
+
+=====================================================================================================
+
+🛠️ Service Management
+Start, stop, and check services.
+
+systemctl status nginx      # Check service status
+systemctl start nginx       # Start a service
+systemctl stop nginx        # Stop a service
+systemctl restart nginx     # Restart a service
+systemctl enable nginx      # Enable service to start at boot
+systemctl disable nginx     # Disable service at boot
+journalctl -u nginx         # View service logs
+
+======================================================================================================
+📜 Crontab (Job Scheduling)
+Schedule automated tasks.
+
+crontab -e                 # Edit crontab file
+crontab -l                 # List current cron jobs
+echo "0 5 * * * /path/script.sh" | crontab -  # Run script every day at 5 AM
+
+Example cron jobs:
+# Run a script every day at midnight
+0 0 * * * /home/user/backup.sh
+
+# Run a script every 15 minutes
+*/15 * * * * /home/user/check_logs.sh
+
+========================================================================================================
+
+🐍 Working with Docker (if using)
+For managing containers in a test/infra environment.
+
+docker ps                     # List running containers
+docker images                 # List all images
+docker logs <container_id>     # View logs of a container
+docker exec -it <container_id> bash  # Access shell inside a container
+docker stop <container_id>     # Stop a container
+docker rm <container_id>       # Remove a container
+docker rmi <image_id>          # Remove an image
+docker-compose up -d           # Start containers in background
+docker-compose down            # Stop and remove containers
+============================================================================================================
+
+1️⃣ Find top 10 CPU-consuming processes:
+ps aux --sort=-%cpu | head -n 11
+
+
+2️⃣ Find top 10 memory-consuming processes:
+ps aux --sort=-%mem | head -n 11
+
+3️⃣ Find all open ports:
+netstat -tulnp | grep LISTEN
+
+4️⃣ Monitor file changes in real-time:
+
+watch -n 2 ls -lh /path/to/directory
+
+
+5️⃣ Get IP address of a website:
+
+nslookup example.com
+
+
+

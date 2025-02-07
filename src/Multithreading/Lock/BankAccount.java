@@ -1,5 +1,9 @@
 package Multithreading.Lock;
 
+/**
+ * @author manoj
+ *
+ * */
 public class BankAccount {
     private int balance=100;
 
