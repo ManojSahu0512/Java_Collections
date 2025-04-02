@@ -34,7 +34,7 @@ public class StreamOperation {
 
         List<Integer> collect= Stream.iterate(0,x->x+1).peek(x-> System.out.println(x)).limit(101).skip(1).collect(Collectors.toList());
         System.out.println(collect);
-9
+
 
 
 
