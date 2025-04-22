@@ -3,7 +3,7 @@ package Coding.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MajorityElement {
+public class  MajorityElement {
     public static int findMajorityElement(int[] arr){
         Map<Integer,Integer>frequencyMap=new HashMap<>();
         int n = arr.length;

@@ -8,7 +8,7 @@ public class SecondSmallestInArray {
             if(arr[i]<smallest){
                 secSmallest=smallest;
                 smallest=arr[i];
-            } else if (arr[i]!=smallest && arr[i]<secSmallest) {
+            } else if (arr[i]>smallest && arr[i]<secSmallest) {
                 secSmallest=arr[i];
 
             }
