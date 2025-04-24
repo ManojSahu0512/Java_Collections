@@ -23,3 +23,21 @@ java.util.Map
 └── ConcurrentMap
     └── ConcurrentHashMap
 
+
+
+Choosing Cheat Sheet:
+Need index access and duplicates → ArrayList
+
+Need insert/delete often → LinkedList
+
+Need unique unordered items → HashSet
+
+Need unique sorted items → TreeSet
+
+Need key-value with no order → HashMap
+
+Need sorted key-value → TreeMap
+
+Need queue → Queue / Deque
+
+Need thread safety → Use ConcurrentHashMap, CopyOnWriteArrayList, or synchronized wrappers
