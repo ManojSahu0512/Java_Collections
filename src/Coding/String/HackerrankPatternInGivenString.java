@@ -1,4 +1,5 @@
 package Coding.String;
+
 /*We say that a string contains the word hackerrank if a subsequence of its characters spell the word hackerrank. Remeber that a subsequence maintains the order of characters selected from a sequence.
 *
 * 2
@@ -28,15 +29,15 @@ public class HackerrankPatternInGivenString {
     }
 
     public static void main(String[] args) {
-        int query=2;
-        String[] str=new String[query];
-        str[0]="hhaacckkekraraannk";
-        str[1]="rhbaasdndfsdskgbfefdbrsdfhuyatrjtcrtyytktjjt";
-        for(String s:str){
+        int query = 2;
+        String[] str = new String[query];
+        str[0] = "hhaacckkekraraannk";
+        str[1] = "rhbaasdndfsdskgbfefdbrsdfhuyatrjtcrtyytktjjt";
+        for (String s : str) {
             System.out.println(hackerrankInString(s));
         }
 //YES
-        //No
+// No
 
     }
-    }
+}
