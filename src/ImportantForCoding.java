@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class ImportantForCoding {
     public static void main(String[] args) {
 
@@ -42,5 +47,25 @@ public class ImportantForCoding {
         System.out.println("Character for ASCII " + ascii2 + " is: " + character);
 
 
-    }
+        String s="lfl";
+        String reversed = new StringBuilder(s).reverse().toString();
+        //
+        List<String> list1 = new ArrayList<>();
+        list1.add("a");
+        list1.add("b");
+        list1.add("b");
+        list1.add("c");
+
+        List<String> list2 = new ArrayList<>();
+        list2.add("b");
+        list2.add("c");
+        list2.add("d");
+
+        list1.retainAll(list2);
+
+        System.out.println(list1); // Output: [b, b, c]
+
+        // Need to convert to set to count unique minerals
+        Set<String> uniqueGemstones = new HashSet<>(list1);
+        }
 }

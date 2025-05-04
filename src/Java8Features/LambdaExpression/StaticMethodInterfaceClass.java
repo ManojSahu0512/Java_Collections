@@ -5,9 +5,9 @@ interface A1{
         System.out.println("Hello");
     }
 }
-public class StaticMethodInterfaceClass implements A1 {
+public class StaticMethodInterface implements A1 {
     public static void main(String[] args) {
-        StaticMethodInterfaceClass staticMethodInterfaceCall=new StaticMethodInterfaceClass();
+        StaticMethodInterface staticMethodInterfaceCall=new StaticMethodInterface();
         A1.sayHello();
 
     }
