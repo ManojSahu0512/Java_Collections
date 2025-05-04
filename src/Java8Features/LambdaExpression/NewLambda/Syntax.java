@@ -1,4 +1,4 @@
-package Java8Features.LambdaExpression.New;
+package Java8Features.LambdaExpression.NewLambda;
 
 public class Syntax {
     public static void main(String[] args) {

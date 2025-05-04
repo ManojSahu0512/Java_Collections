@@ -1,4 +1,4 @@
-package Java8Features.LambdaExpression.New.WithCollection;
+package Java8Features.LambdaExpression.NewLambda.WithCollection;
 
 import java.util.Arrays;
 import java.util.List;

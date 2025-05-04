@@ -1,8 +1,7 @@
-package Java8Features.LambdaExpression.New.MapAndReduceWithLambdas;
+package Java8Features.LambdaExpression.NewLambda.MapAndReduceWithLambdas;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class MapReduceWithLambdas {
     public static void main(String[] args) {

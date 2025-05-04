@@ -1,4 +1,4 @@
-package Java8Features.LambdaExpression.New.WithParameter;
+package Java8Features.LambdaExpression.NewLambda.WithParameter;
 
 import java.util.Comparator;
 

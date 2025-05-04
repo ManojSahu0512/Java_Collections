@@ -1,4 +1,4 @@
-package Java8Features.LambdaExpression.New.FilteringListWithLambdaAndStreams;
+package Java8Features.LambdaExpression.NewLambda.FilteringListWithLambdaAndStreams;
 
 import java.util.Arrays;
 import java.util.List;
