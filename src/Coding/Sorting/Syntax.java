@@ -1,6 +1,6 @@
 package Coding.Sorting;
 
-public class SortingDocs {
+public class Syntax {
 
     /*
     Summary of Sorting Techniques

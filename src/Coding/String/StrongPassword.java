@@ -25,6 +25,7 @@ public class StrongPassword {
             } else if (Character.isUpperCase(password.charAt(i))) {
                 uppercase++;
             } else if (Character.isLowerCase(password.charAt(i))) {
+
                 lowercase++;
             } else {
                 specialchar++;

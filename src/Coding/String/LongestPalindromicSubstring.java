@@ -11,25 +11,22 @@ public class LongestPalindromicSubstring {
         }
         return true;
 
-    }
-    public static String longestPalindrome(String s) {
-        String longestString="";
-        int maxLength=0;
+    }public static String longestPalindrome(String s) {
+        if (s == null || s.length() == 0) return "";
 
-        for(int i=0;i<s.length();i++){
-            for(int j=i+1;j<=s.length();j++){
-                String sub=s.substring(i,j);
-                if(isPalindrome(sub) && sub.length()>maxLength){
-                    maxLength=sub.length();
-                    longestString=sub;
+        String longest = "";
 
+        // Check all possible substrings
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String substring = s.substring(i, j);
+                if (isPalindrome(substring) && substring.length() > longest.length()) {
+                    longest = substring;
                 }
-
-
             }
         }
-        return longestString;
 
+        return longest;
     }
     public static void main(String[] args) {
         String s="babad";
