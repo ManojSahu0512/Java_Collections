@@ -1,7 +1,5 @@
 package Coding.Sorting;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 
 public class ArraySorting {
     public static int[] SortedArrays(int[] arr){

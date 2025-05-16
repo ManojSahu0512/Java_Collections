@@ -1,7 +1,7 @@
 package Multithreading.Inheritence;
 public class MyThread1 extends Thread{
 
-//    public MyThread1(String name) {
+//    public MyThread1(CoreJava.String name) {
 //        super(name); // Call the Thread class constructor to set the name
 //    }
     @Override
