@@ -1,0 +1,119 @@
+Low-Level Design (LLD) Patterns for Interview Questions
+Here's a comprehensive list of common Low-Level Design (LLD) patterns that are frequently asked in system design interviews:
+
+1. Creational Patterns
+Singleton Pattern
+
+Factory Method Pattern
+
+Abstract Factory Pattern
+
+Builder Pattern
+
+Prototype Pattern
+
+2. Structural Patterns
+Adapter Pattern
+
+Bridge Pattern
+
+Composite Pattern
+
+Decorator Pattern
+
+Facade Pattern
+
+Flyweight Pattern
+
+Proxy Pattern
+
+3. Behavioral Patterns
+Chain of Responsibility Pattern
+
+Command Pattern
+
+Interpreter Pattern
+
+Iterator Pattern
+
+Mediator Pattern
+
+Memento Pattern
+
+Observer Pattern
+
+State Pattern
+
+Strategy Pattern
+
+Template Method Pattern
+
+Visitor Pattern
+
+4. Concurrency Patterns
+Producer-Consumer Pattern
+
+Reader-Writer Pattern
+
+Thread Pool Pattern
+
+Monitor Object Pattern
+
+Active Object Pattern
+
+5. Architectural Patterns
+MVC (Model-View-Controller)
+
+MVP (Model-View-Presenter)
+
+MVVM (Model-View-ViewModel)
+
+Layered Architecture
+
+Repository Pattern
+
+Unit of Work Pattern
+
+6. Object-Oriented Design Principles
+SOLID Principles
+
+Single Responsibility Principle (SRP)
+
+Open/Closed Principle (OCP)
+
+Liskov Substitution Principle (LSP)
+
+Interface Segregation Principle (ISP)
+
+Dependency Inversion Principle (DIP)
+
+DRY (Don't Repeat Yourself)
+
+Composition over Inheritance
+
+Law of Demeter (LoD)
+
+Common LLD Problems in Interviews
+Design a Parking Lot
+
+Design a Chess Game
+
+Design a Deck of Cards
+
+Design a Library Management System
+
+Design an ATM Machine
+
+Design a Vending Machine
+
+Design an Elevator System
+
+Design a Car Rental System
+
+Design a Movie Ticket Booking System
+
+Design a Snake and Ladder Game
+
+Understanding these patterns and being able to apply them to real-world problems is key to performing well in LLD interviews.
+
+New chat

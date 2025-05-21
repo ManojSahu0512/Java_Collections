@@ -13,7 +13,7 @@ public class SharedResource {
             reentrantLock.lock();
             System.out.println("Produce lock acquired by: "+Thread.currentThread().getName());
             if(isAvailable){
-                //alreday available , thread has to wait for it to consume
+                //already available , thread has to wait for it to consume
                 System.out.println("Produce thread is waiting: "+Thread.currentThread().getName());
                 condition.await();
             }

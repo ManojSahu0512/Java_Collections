@@ -12,12 +12,19 @@ public class SharedResource {
 
             System.out.println("Lock acquired by: "+Thread.currentThread().getName());
             isAvailable = true;
-            Thread.sleep(6000);  //sleep method will not release the lock
+            Thread.sleep(10000);  //sleep method will not release the lock
         } catch (Exception e) {
 
         } finally {
+            System.out.println("Lock released by "+Thread.currentThread().getName());
             reentrantLock.unlock();
-            System.out.println("Lock released by");
+
         }
     }
 }
+//Thread1 calling produce method
+//Thread2 calling produce method
+//Lock acquired by: Thread-0
+//Lock released by Thread-0
+//Lock acquired by: Thread-1
+//Lock released by Thread-1

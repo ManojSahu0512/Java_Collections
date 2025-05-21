@@ -36,7 +36,7 @@ public class Example2 {
         System.out.println("is Cancelled "+futureObj.isCancelled());
     }
 }
-//Is done?false
+//is done?false
 //Timeout Happened
 //This is the task,which thread will execute
 //is Done:true

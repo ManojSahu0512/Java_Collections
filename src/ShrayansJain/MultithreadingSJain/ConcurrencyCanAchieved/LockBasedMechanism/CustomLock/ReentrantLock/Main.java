@@ -30,6 +30,6 @@ public class Main {
 //Thread1 calling produce method
 //Thread2 calling produce method
 //Lock acquired by: Thread-0
-//Lock released by
+//Lock released by Thread-0
 //Lock acquired by: Thread-1
-//Lock released by
+//Lock released by Thread-1

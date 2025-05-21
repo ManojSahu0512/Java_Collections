@@ -10,10 +10,10 @@ public class SharedResource {
     public synchronized void consumeItem(){
 
         System.out.println("Consumer thread inside consumerItem method");
-        if(!isItemPresent){
+        if(!isItemPresent){//if item is not present
 
             try{
-                System.out.println("counsumer thread is waiting...");
+                System.out.println("consumer thread is waiting...");
                 wait();//release all the monitor lock
             }catch (Exception e){
                 //excepting handling goes here

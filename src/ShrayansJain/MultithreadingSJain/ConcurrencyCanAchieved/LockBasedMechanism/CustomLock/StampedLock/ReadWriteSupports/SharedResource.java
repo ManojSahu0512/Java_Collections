@@ -1,6 +1,6 @@
 package ShrayansJain.MultithreadingSJain.ConcurrencyCanAchieved.LockBasedMechanism.CustomLock.StampedLock.ReadWriteSupports;
 
-import java.util.concurrent.locks.ReadWriteLock;
+
 import java.util.concurrent.locks.StampedLock;
 
 public class SharedResource {

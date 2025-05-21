@@ -1,7 +1,7 @@
 package ShrayansJain.MultithreadingSJain.ConcurrencyCanAchieved.LockBasedMechanism.CustomLock.ReadWriteLock;
 
 import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
+
 
 public class SharedResource {
     boolean isAvailable = false;
