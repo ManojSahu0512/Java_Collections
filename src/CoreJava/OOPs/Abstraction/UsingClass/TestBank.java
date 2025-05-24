@@ -1,17 +1,18 @@
 package CoreJava.OOPs.Abstraction;
 
-abstract class Bank{
+abstract class Bank {
     abstract int getRateOfInterest();
 }
 
-class SBIN extends Bank{
+class SBIN extends Bank {
 
     @Override
     int getRateOfInterest() {
         return 9;
     }
 }
-class ICIC extends Bank{
+
+class ICIC extends Bank {
 
     @Override
     int getRateOfInterest() {
@@ -19,7 +20,7 @@ class ICIC extends Bank{
     }
 }
 
-class PNB extends Bank{
+class PNB extends Bank {
 
     @Override
     int getRateOfInterest() {
@@ -30,14 +31,14 @@ class PNB extends Bank{
 public class TestBank {
     public static void main(String[] args) {
         Bank bank;
-        bank=new SBIN();
+        bank = new SBIN();
 
-        System.out.println("Rate of Interest is: "+bank.getRateOfInterest()+" %");
-        bank=new ICIC();
-        System.out.println("Rate of Interest is: "+bank.getRateOfInterest()+" %");
+        System.out.println("Rate of Interest is: " + bank.getRateOfInterest() + " %");
+        bank = new ICIC();
+        System.out.println("Rate of Interest is: " + bank.getRateOfInterest() + " %");
 
-        bank=new PNB();
-        System.out.println("Rate of Interest is: "+bank.getRateOfInterest()+" %");
+        bank = new PNB();
+        System.out.println("Rate of Interest is: " + bank.getRateOfInterest() + " %");
     }
 }
 

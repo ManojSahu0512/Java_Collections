@@ -18,7 +18,13 @@ public class BasicsExample {
         String str2 = new String("Hello, World!");
 
         //StringBuffer
-        //CoreJava.String Buffer represents a mutable sequence of characters that ensures thread safety, making it suitable for scenarios involving multiple threads that modify a character sequence. It includes various string manipulation capabilities, including the ability to insert, delete, and append characters. This design avoids the necessity of generating new objects with each change, leading to enhanced efficiency in situations requiring regular adjustments to the string content.
+        //CoreJava.String Buffer represents a mutable sequence of characters
+        // that ensures thread safety, making it suitable for scenarios
+        // involving multiple threads that modify a character sequence.
+        // It includes various string manipulation capabilities, including the ability
+        // to insert, delete, and append characters. This design avoids the necessity of
+        // generating new objects with each change, leading to enhanced efficiency in situations
+        // requiring regular adjustments to the string content.
 
 
 
